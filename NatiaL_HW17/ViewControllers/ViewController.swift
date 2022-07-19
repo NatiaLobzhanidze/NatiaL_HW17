@@ -23,10 +23,8 @@ class ViewController: UIViewController {
     }
     
     @objc func changeBckgrndColor(notification: Notification) {
-        if let color = notification.userInfo?["backgroundColor"] as? UIColor {
+        guard let color = notification.userInfo?["backgroundColor"] as? UIColor else { return }
             view.backgroundColor = color
-        }
-        
     }
   
 }

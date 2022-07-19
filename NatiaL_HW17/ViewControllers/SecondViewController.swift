@@ -36,7 +36,7 @@ class SecondViewController: UIViewController {
             setupSwipeGesture()
         case 4:
             setupSwipeGesture()
-            NotificationCenter.default.post(name: Notification.Name("ChangeColor"), object: nil, userInfo: ["backgroundColor" : colorsArray.randomElement()])
+            NotificationCenter.default.post(name: Notification.Name("ChangeColor"), object: nil, userInfo: ["backgroundColor" : colorsArray.randomElement() ?? UIColor.red ])
         default:
             addLongPress()
         }
