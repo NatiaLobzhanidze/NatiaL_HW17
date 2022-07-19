@@ -7,10 +7,9 @@
 
 import Foundation
 import UIKit
-// Circle Gestures
 
 extension SecondViewController {
-    
+
     func addLongPress() {
         longgesture = UILongPressGestureRecognizer(target: self, action: #selector(longPress))
         if moveId == 1 {
@@ -20,7 +19,7 @@ extension SecondViewController {
         }
         myImage.addGestureRecognizer(longgesture)
     }
-    
+
     @objc func longPress(gesture: UIGestureRecognizer){
         if moveId == 1 {
             navigationController?.popToRootViewController(animated: true)
@@ -28,7 +27,7 @@ extension SecondViewController {
             setView(image: myImage, hidden: true)
         }
     }
-    
+
     func setView(image: UIImageView, hidden: Bool) {
         UIImageView.animate(withDuration: 0.7,
                             delay: 0.5 ,
@@ -36,5 +35,5 @@ extension SecondViewController {
                             animations: {
             image.alpha = 0
         })}
-    
+
 }

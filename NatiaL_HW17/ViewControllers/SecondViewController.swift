@@ -13,17 +13,17 @@ class SecondViewController: UIViewController {
     
     var moveId = 0
     
-    var startingWidth: CGFloat!
+    var startingX: CGFloat!
     
-    var startingheight: CGFloat!
+    var startingY: CGFloat!
     
     var longgesture = UILongPressGestureRecognizer()
     let colorsArray = [UIColor.brown, UIColor.yellow, UIColor.green, UIColor.cyan]
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        startingWidth = self.myImage.frame.size.width
-        startingheight = self.myImage.frame.size.height
+        startingX = self.myImage.frame.origin.x
+        startingY = self.myImage.frame.origin.y
         setUpGestures()
         
     }

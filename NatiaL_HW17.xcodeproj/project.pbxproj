@@ -17,6 +17,7 @@
 		60B3D4CF2886F9F600F1EE50 /* SVCExtensionForSwipGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3D4CE2886F9F600F1EE50 /* SVCExtensionForSwipGesture.swift */; };
 		60B3D4D12886FA5C00F1EE50 /* SVCExtensionsForLongPress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3D4D02886FA5C00F1EE50 /* SVCExtensionsForLongPress.swift */; };
 		60B3D4D32886FBBF00F1EE50 /* VCExtensionForTapGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3D4D22886FBBF00F1EE50 /* VCExtensionForTapGesture.swift */; };
+		60B3D4D928872D3C00F1EE50 /* SVCExtForSwipeX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B3D4D828872D3C00F1EE50 /* SVCExtForSwipeX.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		60B3D4CE2886F9F600F1EE50 /* SVCExtensionForSwipGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVCExtensionForSwipGesture.swift; sourceTree = "<group>"; };
 		60B3D4D02886FA5C00F1EE50 /* SVCExtensionsForLongPress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVCExtensionsForLongPress.swift; sourceTree = "<group>"; };
 		60B3D4D22886FBBF00F1EE50 /* VCExtensionForTapGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCExtensionForTapGesture.swift; sourceTree = "<group>"; };
+		60B3D4D828872D3C00F1EE50 /* SVCExtForSwipeX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVCExtForSwipeX.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				60B3D4D22886FBBF00F1EE50 /* VCExtensionForTapGesture.swift */,
 				60B3D4CE2886F9F600F1EE50 /* SVCExtensionForSwipGesture.swift */,
 				60B3D4D02886FA5C00F1EE50 /* SVCExtensionsForLongPress.swift */,
+				60B3D4D828872D3C00F1EE50 /* SVCExtForSwipeX.swift */,
 			);
 			path = ViewControllersExtenions;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 				60B3D4CC2886017D00F1EE50 /* SecondViewController.swift in Sources */,
 				60B3D4D32886FBBF00F1EE50 /* VCExtensionForTapGesture.swift in Sources */,
 				60B3D4B92885FB7D00F1EE50 /* ViewController.swift in Sources */,
+				60B3D4D928872D3C00F1EE50 /* SVCExtForSwipeX.swift in Sources */,
 				60B3D4B52885FB7D00F1EE50 /* AppDelegate.swift in Sources */,
 				60B3D4D12886FA5C00F1EE50 /* SVCExtensionsForLongPress.swift in Sources */,
 				60B3D4B72885FB7D00F1EE50 /* SceneDelegate.swift in Sources */,
