@@ -19,6 +19,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         addTap()
+        NotificationCenter.default.addObserver(self, selector: #selector(changeBckgrndColor), name: Notification.Name("ChangeColor"), object: nil)
+    }
+    
+    @objc func changeBckgrndColor(notification: Notification) {
+        if let color = notification.userInfo?["backgroundColor"] as? UIColor {
+            view.backgroundColor = color
+        }
+        
     }
   
 }

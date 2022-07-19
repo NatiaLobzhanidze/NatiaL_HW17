@@ -73,6 +73,7 @@ extension SecondViewController {
             self.myImage.frame.size.width = startingWidth
             self.myImage.frame.size.height = startingheight
             self.myImage.center = self.view.center
+            
         }
     }
 }

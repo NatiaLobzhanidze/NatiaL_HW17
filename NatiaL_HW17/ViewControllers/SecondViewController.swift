@@ -18,22 +18,25 @@ class SecondViewController: UIViewController {
     var startingheight: CGFloat!
     
     var longgesture = UILongPressGestureRecognizer()
-    
-    
+    let colorsArray = [UIColor.brown, UIColor.yellow, UIColor.green, UIColor.cyan]
     override func viewDidLoad() {
         
         super.viewDidLoad()
         startingWidth = self.myImage.frame.size.width
         startingheight = self.myImage.frame.size.height
         setUpGestures()
+        
     }
     
     func setUpGestures(){
         switch moveId {
         case 1,2:
             addLongPress()
-        case 3,4:
+        case 3:
             setupSwipeGesture()
+        case 4:
+            setupSwipeGesture()
+            NotificationCenter.default.post(name: Notification.Name("ChangeColor"), object: nil, userInfo: ["backgroundColor" : colorsArray.randomElement()])
         default:
             addLongPress()
         }
